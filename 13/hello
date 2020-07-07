@@ -1,0 +1,460 @@
+# '''
+# print('hello,word');
+# print('hello,word');
+# print('hello,word');
+# print('hello,word');
+# '''
+#
+#
+# c = ssaf
+#
+#
+# print(type(c))
+
+# mingAge = 190
+# mingAge1 = 15
+# print("小明的年龄%d" %mingAge)
+#
+# mingAge + 1
+# print("小明的年龄%d" %mingAge)
+#
+# # 姓名 小明  身高 180.6 年龄 25 是否男性 男
+# s_name = "小明"
+# s_hinght = 180.6
+# s_age = 25
+# is_sex = True
+#
+# # print(s_name,s_hinght,s_age,is_sex)
+# my_name = input("请输入名字：")
+# my_age = input("请输入年龄：")
+#
+# print("名字：%s" % my_name,"年龄：%s" % my_age)
+#
+# #name标识符接收input控制台输入
+# name=input("请输入名字")
+#
+# #age标识符接收input控制台输入
+# age=input("请输入年龄")
+#
+# #打印输出name标识符和age标识符
+# print("%s今年%s岁")%(name,age)
+#
+# s_name = '120'
+# s_aww = eval(s_name)
+#
+# # print(type(s_aww))
+# s = 'hello!'
+# print(s[-1:-7:-1])
+
+
+# xieyi= "http://"
+# url="www.example.ip:"
+# dlxxrz='user:pass'
+# duankou="80"
+# lujing="/dir/index.htm?"
+# cxzfc='uid=1'
+# pdbsf="ch1"
+# # print("协议名为%s" % xieyi[0:5:1])
+# print("url为%s" % http[17:32])
+# http='http://user:pass@www.example.ip:80/dir/index.htm?uid=1#ch1'
+# ht=http[0:5]
+# login=http[7:16]
+# server=http[16:32]
+# serverId=http[31:33]
+# path=http[34:47]
+# # strSearch=http[48:53]
+# # vChar=http[54:57]
+# # print("协议方案名%s,登录信息%s,服务器地址%s,服务器端号%s,带层次的文件路径%s,查询字符串%s,片段标识符%s"%(ht,login,server,serverId,path,strSearch,vChar))
+# # print("协议方案名{},登录信息{},服务器地址{},服务器端号{},带层次的文件路径{},查询字符串{},片段标识符{}".format(ht,login,server,serverId,path,strSearch,vChar))
+# #
+#
+# a = [1,12.23,"asd",True,45,444]
+# print(a[3])
+# print(a[0:5:2])
+#要求：定义一个函数，完成前2个数完成加法运算，然后对第3个数，进行减法；然后调用这个函数
+#使用def定义函数，要注意有3个参数
+# #调用的时候，这个函数定义时有几个参数，那么就需要传递几个参数
+# def add2num(a,b,c):
+#     i= a+b-c
+#     print(i)
+#
+# add2num(11,22,10)
+# # 90 优秀 80-60良好 60以下不及格
+# s = 70
+# if(s >=  90):
+#     print("成绩优秀")
+#
+# elif(60<=s and s<80):
+#     print("成绩良好")
+#
+# elif ( s<60 ):
+#     print("成绩不及格")
+# 打印100以内质数
+# mun = []
+# for i in range(2,100):
+#    if i
+
+
+
+    # 打印100以内奇数# 打印100以内奇数 并求和
+#
+# j =0
+# i =0
+# while i < 100:
+#     if i % 2 != 0:
+#         j = j +i
+#         print(i)
+#     i = i + 1
+# print(j)
+
+#打印出100以内的数，遇到被5整除的数就跳过
+# i = 0
+# while i < 100:
+#     i = i + 1
+#     if i % 5 == 0:
+#         continue
+#     print(i)
+
+# i = 0
+# while i < 100:
+#     i = i + 1
+#     if i % 5 == 0:
+#         break
+#     print(i)
+#
+#
+# L=[]
+# for x in range(2,100):
+#     for i in range(2,x):
+#         if x%i==0:
+#             break
+#          else:   #走到此处，x一定是素数
+#              L.append(x)
+# print("100以内的全部素数有：",L)
+
+# for i in range(2,100):
+#     for j in  range(2,i):
+#         if i%j == 0:
+#             break
+#     else:
+#         print(i)
+
+#求出1-100的和
+# num = 0
+# for i in range(1,101):
+#     num +=i
+# print(num)
+
+
+#求出100阶乘 100！
+# num=1
+# for i in range(1,100):
+#     num = i * (num)
+# print(num)
+#
+#
+# # 99乘法表 （循环嵌套）
+# 循环嵌套
+# all=0
+# for i in range(1,10):
+#     for j in range(1,i+1):
+#         all = i * j
+#         print("{}*{}={}\t".format(i,j,all), end='')
+#     print()
+# a = [31,48,45,4,1,6]
+# for i in range(len(a)-1):
+#     for j in range(len(a)-i-1):
+#         print(j)
+#         if a[j] > a[j+1]:
+#             a[j+1],a[j] = a[j],a[j+1]
+# print(a)
+# #
+# #
+# a = [[1, 2, 3], [5, 5, 6], [7, 8, 9]]
+# init_i = 0
+# init_j = 0
+# flag = True
+# for i in range(3):
+#     for j in range(3):
+#         # print(i, j)
+#         if a[i][j] == 5:
+#             flag = False
+#             init_i = i
+#             init_j = j
+#             break
+#     else:
+#         continue
+#     break
+#     # if not flag:
+#     #     break
+# print(init_i, init_j)
+# print(i, j)
+#
+# 冒泡排序
+# count=[1,4,1258,5,8,2,8,50,30,80]
+# for i in  range(len(count)):
+#     for j in range(len(count)-1-i):
+#         if  count[j] > count[j+1]:
+#             count[j+1],count[j] = count[j],count[j+1]
+# print(count)
+
+
+
+# a = "shdshdaos88780"
+# # print(a[1:8:1])
+# print(a.split(" ",1))
+# score = (20,30,60,80)
+# name = ['大锤','小锤','锤锤']
+# phone = {'大锤'：1236566,'小锤'：1236566,'锤锤'：1236566}
+# xuehao = {21，12，45，1，88}
+
+
+
+# 判断是否闰年
+# year = int(input("请输入年份："))
+# if (year % 4 ==0 and year % 100 !=0) or (year % 400 ==0):
+#     print("闰年")
+# else:
+#     print("不是闰年")
+#
+#
+# i = int(input("第一个数"))
+# j = int(input("第二个数"))
+# c = int(input("第三个数"))
+# if i>j and i>c:
+#     print(i)
+# elif j>i and j>c:
+#     print(j)
+# elif c>j and c>i:
+#     print(c)
+# else:
+#     print("没有最大的")
+
+# for i in range(1,10):
+#     for j in range (1,i+1):
+#         a = i*j
+#         print("{}*{}={}".format(i,j,a), end=' ')
+#         # print("%d*%d=%d"%(i,j,a),end=" ")
+#     print()
+
+import math
+# wx_list=['卖茶叶','卖酒','卖花','卖大米']
+# # 用循环把列表数据删除，最后情况
+# a = wx_list
+# while len(a) !=0:
+#     for i in a:
+#          wx_list.remove(i)
+# print(a)
+
+
+#
+# a = int(input('请输入成绩'))
+# if a >=0 and a<60 :
+#     print("不及格")
+# elif a>=60 and a<=70:
+#     print("及格")
+# elif a>70 and a<= 80:
+#     print("良好")
+# elif a>80 and a<= 100:
+#     print("优秀")
+# else:
+#     print("请输入正确成绩")
+#
+# a="adfjhhsh"
+#
+ # print(a[0:7:1])
+# sum=1
+# for i in range(10,0,-1):
+#     sum = sum*i
+# print(sum)
+
+# def a(x): #x参数，输入
+#     y = x + 1
+#     return  y #函数定义体，带出返回值
+#     #返回
+# c=a(2)
+# # print(c)
+# my_list = [155,66,16]
+# b = my_list.append("hello")
+# c = my_list.pop(0)
+# print(my_list)
+# print(b)
+# print(c)
+
+# def shangyu(b,a=515):
+#     if b==0:
+#         return None
+#     else:
+#         return (a//b,a%b)
+# res=shangyu(945)
+# if res is None:
+#     print("参数错误")
+# else:
+#     print("商是{},余数是{}".format(res[0],res[1]))
+
+
+# def sum_01(*args,**kwargs):
+#     # **kwargs 接收动态关键字参数，以字典格式输出
+#     # *args 接收动态位置参数，以元组格式输出
+#     print(kwargs)
+#     s=0
+#     for9 i in args:
+#         s+=i
+#     return s
+#
+# print(sum_01(4,454,5,name="shkaj"))
+# class asd():
+#     def ad():
+#         global  a
+#         a = 10
+#     ad()
+#     print(a)
+# 面向对象
+# class calc():
+#     # 属性
+#     a=None
+#     b=None
+#     res=None
+#     # 输入数据 self哪个实例用，self代表谁
+#     def imput(self,a,b):
+#         self.a=a
+#         self.b=b
+#     #  加法
+#     def sum(self):
+#         self.res = self.a+self.b
+#     #  除法
+#     def div(self):
+#         self.res = self.a / self.b
+#     #   输出结果
+#     def get_result(self):
+#         print(self.res)
+#
+# c = calc()  #类的实例化
+# c.imput(10,20)
+# c.sum()
+# c.get_result()
+# c.div()
+# c.get_result()
+
+
+#
+# class calc():
+#     def __init__(self,a,b): # 魔法函数，构造方法
+#         self.a = a
+#         self.b = b
+#     # 输入数据 self哪个实例用，self代表谁
+#     #  加法
+#     def sum(self):
+#         self.res = self.a+self.b
+#     #  除法
+#     def div(self):
+#         self.res = self.a / self.b
+#     #   输出结果
+#     def get_result(self):
+#         print(self.res)
+#
+# c = calc(25,55)
+# c.sum()
+# c.get_result()
+# c.div()
+# c.get_result()
+#
+
+# class people:
+#     # 定义基本属性
+#     name = ''
+#     age = 0
+#     # 定义私有属性,私有属性在类外部无法直接进行访问
+#     __weight = 0
+#     # 定义构造方法
+#     def __init__(self, n, a, w):
+#         self.name = n
+#         self.age = a
+#         self.__weight = w
+#
+#     def speak(self):
+#         print("%s 说: 我 %d 岁,%d 斤。" % (self.name, self.age,self.__weight))
+#
+#
+# # 实例化类
+# p = people('runoob', 10, 30)
+# p.speak()
+# 类变量，类的所有实例共享。通过类名修改使用。
+# 实例变量，通过对象实例去修改，通过对象实例去取用。
+# 类方法：@classmethod 装饰器，第一个参数名 cls cls代表当前类本身。使用时候通过类名调用，不用实例化
+# 实例方法：实例后才能使用
+# 静态方法：@staticmethod 装饰器 ，方法没有默认参数。通过类名调用。
+
+# # 输入4位数num，每位都加5,再%10后倒序输出
+# num=input("请输入四位数")
+# c=""
+# for i in num:
+#     a = str((int(i)+5)%10)
+#     c =c+a
+# j =c[::-1]
+# print(c)
+#
+
+import os
+import sys
+import re
+import random
+
+# print(os.listdir())
+# print(os.path.exists("hello.py"))
+# print(os.path.abspath("."))
+# print(os.path.dirname("test"))
+# print(os.path.join("D:\\untitled","2006A","venv"))
+# a = print(re.compile("(\d+)"))
+# c = a.findall("54654664645")
+# print(c)
+
+#
+# a =[12,23,12,11]
+# b=a.pop(0)
+# c=a.append(23)
+# # print(a)
+# import os.path
+# os.path.exists()
+#
+#
+#
+#
+# def main():
+#     name= "王大锤"
+#     money="40k"
+#     hello(name,money)
+#
+# def hello(name,money,food="三明治"):
+#     print("恭喜{},拿到{}的offer".format(name,money))
+#     print("{}最喜欢吃{}".format(name,food))
+#     return
+#
+# main()
+
+# 2. 使用while，完成以下图形的输出
+# *
+# * *
+# * * *
+# * * * *
+# * * * * *
+# * * * *
+# * * *
+# * *
+# *
+
+def ass(a,b):
+    try:
+        return a/b
+    except:
+        return None
+print(ass(10,20))
+
+
+
+
+
+
+
+
+

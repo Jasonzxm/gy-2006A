@@ -1,0 +1,28 @@
+def binary_search(data_list, target):
+    """
+    :param data_list: 传入的有序列表
+    :param target:  传入要查找的目标值
+    """
+    low = 0  # 最小数下标
+    high = len(data_list) - 1  # 最大数的下标
+    index = 1  # 用index来记录查找的次数
+
+    while low <= high:
+        mid = (low + high) // 2  # 取中间值
+
+        if data_list[mid] == target:
+            return "一共查找了%d次,此数字在列表中的下标为:%d" % (index, mid)
+        elif data_list[mid] > target:
+            high = mid - 1  # 如果中间值比目标值大,则在mid左半边找
+        else:
+            low = mid + 1  # 如果中间值比目标值小,则在mid右半边找
+
+        index += 1
+    return "一共找了%d次,找不到这样的值!" % index
+
+
+ret1 = binary_search(list(range(1, 1001)), 899)
+ret2 = binary_search(list(range(1, 1000)), 10000)
+print(ret1)
+print(ret2)
+
